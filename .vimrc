@@ -23,7 +23,7 @@ let g:airline_symbols.maxlinenr = ''
 " Note that our gruvbox is modified for a better "Folded" color scheme
 set termguicolors
 set background=dark
-set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 12
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 10
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_italic=1
 let g:gruvbox_invert_selection=0
@@ -64,5 +64,5 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mousemodel=popup
 
 " Initial window size
-set lines=50 columns=100
+set lines=50 columns=120
 
