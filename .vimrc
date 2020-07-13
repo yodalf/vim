@@ -52,7 +52,14 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 
-" Extra
+" Extra for gvim
 set guioptions-=T   " No toolbar
 set guioptions-=r   " No scrollbar
 set visualbell
+
+" Tabstops replaced with spaces
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" Ensure right-click always brings the pop-up menu
+set mousemodel=popup
+
