@@ -63,3 +63,6 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Ensure right-click always brings the pop-up menu
 set mousemodel=popup
 
+" Initial window size
+set lines=50 columns=100
+
