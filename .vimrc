@@ -1,24 +1,13 @@
-
-" PLUGINS
-"
 " Make sure you use single quotes
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
-" COLORS & font
-"
-" Note that our gruvbox is modified for a better "Folded" color scheme
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_italic=1
-autocmd vimenter * colorscheme gruvbox
-set termguicolors
-set background=dark
-set guifont=Source\ Code\ Pro\ Regular\ 9
-
-" airline symbols
+" airline
 let g:airline_symbols = {}
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
@@ -29,6 +18,17 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ':'
 let g:airline_symbols.maxlinenr = ''
 
+" COLORS & font
+"
+" Note that our gruvbox is modified for a better "Folded" color scheme
+set termguicolors
+set background=dark
+set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 12
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_italic=1
+let g:gruvbox_invert_selection=0
+autocmd vimenter * colorscheme gruvbox
+autocmd vimenter * AirlineTheme gruvbox
 
 " FOLDING
 "
@@ -56,6 +56,3 @@ set wrapmargin=0
 set guioptions-=T   " No toolbar
 set guioptions-=r   " No scrollbar
 set visualbell
-set antialias
-
-
