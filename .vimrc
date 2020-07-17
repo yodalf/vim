@@ -66,3 +66,6 @@ set mousemodel=popup
 " Initial window size
 set lines=50 columns=120
 
+" Set scripts to be executable from the shell
+autocmd BufWriteCmd * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent execute "!chmod a+x <afile>" | endif | endif
+
