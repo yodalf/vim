@@ -67,5 +67,5 @@ set mousemodel=popup
 set lines=50 columns=120
 
 " Set scripts to be executable from the shell
-autocmd BufWriteCmd * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent execute "!chmod a+x <afile>" | endif | endif
+autocmd BufWriteCmd * if ( getline(1) =~ '^#!' || getline(1) =~ '/bin/' || &filetype == 'sh') | silent execute '!chmod a+x <afile>' | endif
 
