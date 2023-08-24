@@ -25,7 +25,7 @@ let g:airline_symbols.maxlinenr = ''
 " Note that our gruvbox is modified for a better "Folded" color scheme
 set termguicolors
 set background=dark
-"set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 10
+set guifont=Source\ Code\ Pro
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_italic=1
 let g:gruvbox_invert_selection=0
